@@ -14,4 +14,4 @@ console.log(--x);
 let a = 1;
 console.log(x < 0);
 
-console.log(1=='1')
+console.log(true==='1')
