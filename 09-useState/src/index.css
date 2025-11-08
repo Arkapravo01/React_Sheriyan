@@ -1,11 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
+button {
+  padding: 10px 20px;
+  margin: 20px;
+}
+h1 {
+  background-color: rgb(198, 73, 73);
+  padding: 20px 144px;
+  margin: 20px;
+  width: fit-content;
+  font-size: 100px;
+  border-radius: 5px;
+}
