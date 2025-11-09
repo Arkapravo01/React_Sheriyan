@@ -1,9 +1,24 @@
-import React from 'react'
+import React from "react";
+import axios from "axios";
+import { useState } from "react";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  const [data, setData] = useState([]);
+  const getData = async () => {
+    const response = await axios.get("https://picsum.photos/v2/list");
+    setData(response.data);
+  };
 
-export default App
+  return (
+    <div>
+      <button onClick={getData}>Get Data</button>
+      <div>
+        {data.map((e, idx) => {
+          return <div key={idx}>Hello:{e.author}-{idx}</div>;
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default App;
