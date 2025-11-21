@@ -11,6 +11,9 @@ const Product = () => {
         <Link className="text-xl font-semibold" to="/product/women">
           Women
         </Link>
+        <Link className="text-xl font-semibold" to="/product/kids">
+          Kids
+        </Link>
       </div>
       <Outlet />
     </div>
